@@ -4,5 +4,7 @@ D:\Tools\ikvm\ikvmbin-7.1.4507\bin\ikvmstub -nostdlib -lib:"C:\Windows\Microsoft
 D:\Tools\ikvm\ikvmbin-7.1.4507\bin\ikvmstub -nostdlib -lib:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319" -r:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll" "C:\Program Files\Windows Azure SDK\v1.6\bin\plugins\RemoteForwarder\Microsoft.WindowsAzure.RoleContainer.dll"
 D:\Tools\ikvm\ikvmbin-7.1.4507\bin\ikvmstub -nostdlib -lib:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319" -r:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll" "C:\Program Files\Windows Azure SDK\v1.6\ServiceBus\ref\Microsoft.ServiceBus.dll"
 D:\Tools\ikvm\ikvmbin-7.1.4507\bin\ikvmstub -nostdlib -lib:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319" -r:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll" "C:\Program Files\Windows Azure SDK\v1.6\ref\Microsoft.WindowsAzure.CloudDrive.dll"
+D:\Tools\ikvm\ikvmbin-7.1.4507\bin\ikvmstub -nostdlib -lib:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319" -r:"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll" "C:\Program Files\Windows Azure SDK\v1.6\bin\runtimes\base\x64\msshrtmi.dll"
+
 
 pause

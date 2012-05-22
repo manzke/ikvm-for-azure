@@ -40,6 +40,13 @@
 		</dependency>
 		<dependency>
 			<groupId>microsoft.windowsazure</groupId>
+			<artifactId>msshrtmi</artifactId>
+			<version>1.6</version>
+			<scope>system</scope>
+			<systemPath>${main.dir}/lib/msshrtmi.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>microsoft.windowsazure</groupId>
 			<artifactId>storageclient</artifactId>
 			<version>1.6</version>
 			<scope>system</scope>

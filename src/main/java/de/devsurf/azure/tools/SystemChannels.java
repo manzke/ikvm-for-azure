@@ -8,37 +8,21 @@ import cli.System.Diagnostics.Trace;
 
 public class SystemChannels {
 	public static void channelSystemOut(){
-		System.setOut(new PrintStream(new DotNetInfoOutputStream()));
+		System.setOut(new PrintStream(new DotNetOutputStream()));
 	}
 	
 	public static void channelSystemErr(){
-		System.setErr(new PrintStream(new DotNetErrorOutputStream()));
+		System.setErr(new PrintStream(new DotNetOutputStream()));
 	}
 	
-	public static class DotNetInfoOutputStream extends OutputStream{
-		public DotNetInfoOutputStream() {
+	public static class DotNetOutputStream extends OutputStream{
+		public DotNetOutputStream() {
 			super();
 		}
 		
 		@Override
 		public void write(byte[] b) throws IOException {
-			Trace.TraceInformation(new String(b));
-		}
-		
-		@Override
-		public void write(int b) throws IOException {
-			write(new byte[]{(byte) b});
-		}
-	}
-	
-	public static class DotNetErrorOutputStream extends OutputStream{
-		public DotNetErrorOutputStream() {
-			super();
-		}
-		
-		@Override
-		public void write(byte[] b) throws IOException {
-			Trace.TraceError(new String(b));
+			Trace.Write(new String(b));
 		}
 		
 		@Override
